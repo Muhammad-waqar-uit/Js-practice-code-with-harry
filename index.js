@@ -17,16 +17,6 @@ const d = {
 
 // object variable cannot be re assigned.
 
-d['nam2'] = 'hello'
+d['nam2']='hello'
 
 console.log(d)
-
-
-//question5
-const dictionary = {
-  appreciate: 'recognize the full worth',
-  yakka: 'Hard work',
-  lookup: 'key value'
-}
-
-console.log(dictionary.yakka)
