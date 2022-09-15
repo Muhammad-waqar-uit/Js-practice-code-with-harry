@@ -1,104 +1,49 @@
+//problem one
 /*
-  //chapter 1
-//question1
-let a = 'waqar';
-let b = 1;
-console.log(a + b)
-//question2
-console.log(typeof a)
-console.log(typeof b)
-console.log(typeof (a + b))
-
-//question 3
-const d = {
-  'waqar': 3,
-  'nice': 'yes',
-  2: 33
+let age=prompt('What is your age?')
+if (age>10&&age<20){
+console.log('Your age lies between 10 and 20!')
+}else{
+    console.log("your age doesnot lie between 10 && 20")
+}
+//switch case statement 
+let age=prompt('What is your age?')
+age=Number.parseInt(age)
+switch(age){
+    case 12:
+        console.log('your age is 12')
+        break
+   default:
+        console.log('Nothings!')
 }
 
-// object variable cannot be re assigned.
+//number divisible by 2 and 3
 
-d['nam2'] = 'hello'
+function divisible(number){
+    if (number%2==0 && number%3==0 ){
+        console.log('number is divisble by 2 and 3');
+    }else{
+        console.log('Nope!')
+    }
+}
+let number=Number.parseInt(prompt("Enter number? "))
+divisible(number);
+//either 2 and 3
 
-console.log(d)
+//number divisible by 2 and 3
 
+function divisible(number){
+    if (number%2==0 || number%3==0 ){
+        console.log('number is divisble by 2 and 3');
+    }else{
+        console.log('Nope!')
+    }
+}
+let number=Number.parseInt(prompt("Enter number? "))
+divisible(number);
 
-//operator in js
-
-console.log('operator in js')
-
-console.log('a+b==',1+2)
-console.log('a-b==',1-2)
-console.log('a/b==',1/2)
-console.log('a*b==',2*3)
-//power
-console.log(2**3)
-
-//modulo (reminder)
-console.log(2%4)
-
-//let r=3;
-//console.log(++r)
-//console.log(r)
-
-
-//let g=4;
-
-//console.log(g--)
-
-//console.log(g)
-let a=4;
-console.log(a=2)
+//ternary operator to print 
+let age=Number.parseInt(prompt('your age? '))
+console.log(age>=18 ? 'you can drive':'you cannot drive')
 */
-//variables
-/*
-let a=10;
-let b=3;
 
-//addition
-console.log(a+b);
-/*result : 3 or if one of each value was a string then it
- will just concatenate with the number*/
-/*
-//subtraction
-console.log(a-b); //result : 7
-
-// multiplication
-console.log(a*b); //result : 30
-
-//division
-console.log(a/b); //result : 3.3333 'accurate result no round of xD'
-
-//exponent
-console.log(a**b);
-
-//modulus or remainder
-console.log(a%b);
-
-//incrementation
-console.log(a++); //result will be 10 but after that when you call it will just be 11
-console.log(a--);
-/*same with this result will be 11 because of the addition 
-but when you call it will be 10 again*/
-//so let's just break it down
-//declaring variable
-/*
-  let a=4;
-a++;// 4 is now 5 but when you print this line it will show 4.
-console.log(a);//now it will show 5
-
-//same with the decrements
-console.log(a--);//console will show 5
-console.log(a);//now it will tell you that it is 4
-*/
-/*
-let a=4;
-let b=5;
-
-console.log(a==b ? true:false);
-*/
-let x=4;
-let y=4;
-console.log(x>y && x===y); //result false and true means false cause of AND operator 
-console.log(x>y || x===y); //result true due to OR operator 
-console.log(!false);//result true due to NOT operator
